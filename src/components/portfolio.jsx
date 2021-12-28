@@ -1,6 +1,6 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -16,11 +16,20 @@ export default () => {
   `);
 
   return (
-    <div className="portfolioContainer">
-      <a href="https://www.harrisontateph.co.uk/" target="_blank" rel="noopener noreferrer">
+    <div className="portfolioContainer" id="Portfolio">
+      <a
+        href="https://www.harrisontateph.co.uk/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Img fluid={data.file.childImageSharp.fluid} alt="Portfolio website" />
       </a>
-      <a href="https://github.com/OJPARKINSON" target="_blank" rel="noopener noreferrer" className="githubLink">
+      <a
+        href="https://github.com/OJPARKINSON"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="githubLink"
+      >
         View more on GitHub
       </a>
     </div>

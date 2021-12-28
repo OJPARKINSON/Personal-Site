@@ -96,6 +96,7 @@ body {
     .portfolioContainer {
         display: grid;
         grid-template-columns: 1fr;
+        margin-bottom: 2vw;
     }
     .portfolioImage {
         display: block;

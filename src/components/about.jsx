@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const About = () => (
-  <div className="About">
+  <div className="About" id="About">
     <h2>
-      Hi! I&apos;m Oliver, an Apprentice Software Developer at Sky.
-      I&apos;m currently doing Website development in JavaScript, using the React framework.
+      Hi! I&apos;m Oliver, a software developer based in Leeds. I&apos;m
+      currently focusing on Web development using the React framework.
     </h2>
   </div>
 );
