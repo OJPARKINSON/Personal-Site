@@ -1,37 +1,22 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image"
 
-export default () => {
-  const data = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "bitmap.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000, pngQuality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
-  return (
-    <div className="portfolioContainer" id="Portfolio">
-      <a
-        href="https://www.harrisontateph.co.uk/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.file.childImageSharp.fluid} alt="Portfolio website" />
-      </a>
-      <a
-        href="https://github.com/OJPARKINSON"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="githubLink"
-      >
-        View more on GitHub
-      </a>
-    </div>
-  );
-};
+export default () => (
+  <div className="portfolioContainer" id="Portfolio">
+    <a
+      href="https://www.harrisontateph.co.uk/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <StaticImage src="../images/bitmap.png" alt="Portfolio website" />
+    </a>
+    <a
+      href="https://github.com/OJPARKINSON"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="githubLink"
+    >
+      View more on GitHub
+    </a>
+  </div>
+);
