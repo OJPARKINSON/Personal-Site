@@ -1,8 +1,0 @@
-{
-  "name": "Personal-Site",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:OJPARKINSON/Personal-Site.git",
-  "author": "Oliver Parkinson <olliepar01@gmail.com>",
-  "license": "MIT"
-}
