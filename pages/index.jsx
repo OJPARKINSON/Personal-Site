@@ -15,17 +15,11 @@ const Home = () => (
                 rel="stylesheet"
             />
         </Head>
-
         <Header/>
-
         <About/>
-
         <div className="Spacer"/>
-
         <Portfolio/>
-
         <div className="Spacer"/>
-
         <Section label="Contact" border={false}>
             <Contact/>
         </Section>
