@@ -47,7 +47,7 @@ export default function Page() {
                 <Text as="div" color="gray" mb="1" size="2">
                   linkedin.com
                 </Text>
-                <Text size="5">Linkedin Profile</Text>
+                <Text size="5">Linkedin</Text>
               </Box>
             </Flex>
           </Card>
@@ -70,7 +70,7 @@ export default function Page() {
                 <Text as="div" color="gray" mb="1" size="2">
                   github.com
                 </Text>
-                <Text size="5">GitHub Profile</Text>
+                <Text size="5">GitHub</Text>
               </Box>
             </Flex>
           </Card>
@@ -93,7 +93,7 @@ export default function Page() {
                 <Text as="div" color="gray" mb="1" size="2">
                   codewars.com
                 </Text>
-                <Text size="5">CodeWars Profile</Text>
+                <Text size="5">CodeWars</Text>
               </Box>
             </Flex>
           </Card>
