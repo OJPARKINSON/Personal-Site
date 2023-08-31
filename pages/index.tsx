@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <Card m="9" size="3">
-      <Flex gap="3" align="center">
+      <Flex gap="3" align="center" justify="center">
         <Avatar
           size="5"
           src="https://media.licdn.com/dms/image/C4E03AQGMc3dXp1SLgQ/profile-displayphoto-shrink_400_400/0/1639754853374?e=1698883200&v=beta&t=9RIuaBHkx9GFNEchPpa_ssC6NAwBj_2KeexzsfRwVsw"
@@ -28,7 +28,7 @@ export default function Page() {
           </Text>
         </Box>
       </Flex>
-      <Flex mt="4" gap="4" align="center">
+      <Flex mt="4" gap="4" justify="center" wrap="wrap" direction="row">
         <Link href="https://www.linkedin.com/in/oliver-parkinson/">
           <Card size="1">
             <Flex>
