@@ -29,14 +29,11 @@ export default function Page() {
         </Box>
       </Flex>
       <Flex mt="4" gap="4" justify="center" wrap="wrap" direction="row">
-        <Card
-          size={{
-            initial: "1",
-            md: "3",
-          }}
+        <Link
           style={{ width: "100%", maxWidth: "300px" }}
+          href="https://www.linkedin.com/in/oliver-parkinson/"
         >
-          <Link href="https://www.linkedin.com/in/oliver-parkinson/">
+          <Card size="1">
             <Flex gap="4" align="center">
               <Avatar
                 size="6"
@@ -46,25 +43,19 @@ export default function Page() {
                 }
               />
 
-              <Box>
-                <Text as="div" color="gray" mb="1" size="3">
-                  linkedin.com
+              <Box style={{ maxWidth: 400 }}>
+                <Text style={{ textAlign: "center" }} size="4">
+                  Linkedin
                 </Text>
-                <Text size="6">Linkedin</Text>
               </Box>
             </Flex>
-          </Link>
-        </Card>
+          </Card>
+        </Link>
         <Link
           style={{ width: "100%", maxWidth: "300px" }}
           href="https://github.com/OJPARKINSON"
         >
-          <Card
-            size={{
-              initial: "1",
-              md: "3",
-            }}
-          >
+          <Card size="1">
             <Flex gap="4" align="center">
               <Avatar
                 size="6"
@@ -75,16 +66,7 @@ export default function Page() {
               />
 
               <Box style={{ maxWidth: 400 }}>
-                <Text
-                  as="div"
-                  style={{ textAlign: "center" }}
-                  color="gray"
-                  mb="1"
-                  size="3"
-                >
-                  github.com
-                </Text>
-                <Text style={{ textAlign: "center" }} size="6">
+                <Text style={{ textAlign: "center" }} size="4">
                   GitHub
                 </Text>
               </Box>
@@ -95,12 +77,7 @@ export default function Page() {
           style={{ width: "100%", maxWidth: "300px" }}
           href="https://www.codewars.com/users/OJPARKINSON"
         >
-          <Card
-            size={{
-              initial: "1",
-              md: "3",
-            }}
-          >
+          <Card size="1">
             <Flex gap="4" align="center">
               <Avatar
                 size="6"
@@ -111,10 +88,9 @@ export default function Page() {
               />
 
               <Box>
-                <Text as="div" color="gray" mb="1" size="3">
-                  codewars.com
+                <Text style={{ textAlign: "center" }} size="4">
+                  CodeWars
                 </Text>
-                <Text size="6">CodeWars</Text>
               </Box>
             </Flex>
           </Card>
