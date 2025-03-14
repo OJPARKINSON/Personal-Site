@@ -29,71 +29,92 @@ export default function Page() {
         </Box>
       </Flex>
       <Flex mt="4" gap="4" justify="center" wrap="wrap" direction="row">
-        <Link href="https://www.linkedin.com/in/oliver-parkinson/">
-          <Card size="1">
-            <Flex>
-              <Inset side="left" mr="5">
-                <Flex
-                  align="center"
-                  justify="center"
-                  px="7"
-                  style={{ background: "#24292F", height: "100%" }}
-                >
+        <Card
+          size={{
+            initial: "1",
+            md: "3",
+          }}
+          style={{ width: "100%", maxWidth: "300px" }}
+        >
+          <Link href="https://www.linkedin.com/in/oliver-parkinson/">
+            <Flex gap="4" align="center">
+              <Avatar
+                size="6"
+                color="gray"
+                fallback={
                   <LinkedInLogoIcon color="white" height="40" width="40" />
-                </Flex>
-              </Inset>
+                }
+              />
 
-              <Box style={{ maxWidth: 400 }}>
-                <Text as="div" color="gray" mb="1" size="2">
+              <Box>
+                <Text as="div" color="gray" mb="1" size="3">
                   linkedin.com
                 </Text>
-                <Text size="5">Linkedin</Text>
+                <Text size="6">Linkedin</Text>
               </Box>
             </Flex>
-          </Card>
-        </Link>
-        <Link href="https://github.com/OJPARKINSON">
-          <Card size="1">
-            <Flex>
-              <Inset side="left" mr="5">
-                <Flex
-                  align="center"
-                  justify="center"
-                  px="7"
-                  style={{ background: "#24292F", height: "100%" }}
-                >
+          </Link>
+        </Card>
+        <Link
+          style={{ width: "100%", maxWidth: "300px" }}
+          href="https://github.com/OJPARKINSON"
+        >
+          <Card
+            size={{
+              initial: "1",
+              md: "3",
+            }}
+          >
+            <Flex gap="4" align="center">
+              <Avatar
+                size="6"
+                color="gray"
+                fallback={
                   <GitHubLogoIcon color="white" height="40" width="40" />
-                </Flex>
-              </Inset>
+                }
+              />
 
               <Box style={{ maxWidth: 400 }}>
-                <Text as="div" color="gray" mb="1" size="2">
+                <Text
+                  as="div"
+                  style={{ textAlign: "center" }}
+                  color="gray"
+                  mb="1"
+                  size="3"
+                >
                   github.com
                 </Text>
-                <Text size="5">GitHub</Text>
+                <Text style={{ textAlign: "center" }} size="6">
+                  GitHub
+                </Text>
               </Box>
             </Flex>
           </Card>
         </Link>
-        <Link href="https://www.codewars.com/users/OJPARKINSON">
-          <Card size="1">
-            <Flex>
-              <Inset side="left" mr="5">
-                <Flex
-                  align="center"
-                  justify="center"
-                  px="7"
-                  style={{ background: "#24292F", height: "100%" }}
-                >
-                  <ComponentInstanceIcon color="white" height="40" width="40" />
-                </Flex>
-              </Inset>
+        <Link
+          style={{ width: "100%", maxWidth: "300px" }}
+          href="https://www.codewars.com/users/OJPARKINSON"
+        >
+          <Card
+            size={{
+              initial: "1",
+              md: "3",
+            }}
+          >
+            <Flex gap="4" align="center">
+              <Avatar
+                size="6"
+                color="gray"
+                fallback={
+                  <ComponentInstanceIcon color="white" height="35" width="35" />
+                }
+              />
 
-              <Box style={{ maxWidth: 400 }}>
-                <Text as="div" color="gray" mb="1" size="2">
+              <Box>
+                <Text as="div" color="gray" mb="1" size="3">
                   codewars.com
                 </Text>
-                <Text size="5">CodeWars</Text>
+                <Text size="6">CodeWars</Text>
               </Box>
             </Flex>
           </Card>
