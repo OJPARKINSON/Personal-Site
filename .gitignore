@@ -4,8 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-*.astro
-dis/
+.astro/
+dist/
 
 # testing
 /coverage
