@@ -22,13 +22,16 @@ const links = [
 ---
 
 <Layout title="Oliver Parkinson" description="Full stack software engineer">
-  <main class="hero min-h-screen relative overflow-hidden">
+  <main
+    class="hero min-h-screen relative overflow-hidden"
+    style="background-color: #231f22"
+  >
     <Dithering
       client:only="react"
       style={{ width: "100%", height: "100%" }}
       colorBack="#231f22"
       colorFront="#56ae6c"
-      className="absolute inset-0"
+      className="absolute inset-0 shader-fade"
       shape="warp"
       type="4x4"
       size={1}
@@ -45,6 +48,7 @@ const links = [
               <div class="w-20 rounded-full">
                 <img
                   alt="Oliver Parkinson"
+                  fetchpriority="high"
                   src="https://media.licdn.com/dms/image/v2/D4E03AQF5Sc0BfWmjgg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703954512312?e=1789603200&v=beta&t=pG626xfy9peGiHLzu4lYi4FIGlS5cHMuxyN_4ZFgX_E"
                 />
               </div>
@@ -84,3 +88,25 @@ const links = [
     </div>
   </main>
 </Layout>
+
+<style is:global>
+  /* Dithering mounts client-side; ease it in over the matching flat colorBack. */
+  .shader-fade {
+    animation: shader-fade-in 400ms ease-out;
+  }
+
+  @keyframes shader-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .shader-fade {
+      animation: none;
+    }
+  }
+</style>
